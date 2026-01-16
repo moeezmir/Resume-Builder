@@ -14,6 +14,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="ico.jpeg" type="image/png">
     <style>
+        .link-container {
+  display: flex;
+  justify-content: space-between; /* pushes one link left, the other right */
+  align-items: center;            /* vertically centers them */
+  width: 100%;                    /* full width container */
+  padding: 10px;                  /* optional spacing */
+}
+
+.link-container a {
+  text-decoration: none;
+  color: #ffffff; /* style as you like */
+  font-weight: bold;
+}
+
         footer {
             text-align: center;
             padding: 12px 0;
@@ -1357,7 +1371,12 @@
 
     </div>
     <footer>
-        <a href="https://moeezmir.netlify.app/">Made With &hearts; by Mir Moeez </a>
+    <div class="link-container">
+  <a href="https://moeezmir.netlify.app/" target="_blank">Made With ♥ by Mir Moeez</a>
+  <a href="https://api.whatsapp.com/send?text=Check%20out%20this%20Resume%20Builder%20website!%20https://resugencv.netlify.app/"
+     target="_blank" rel="noopener">Share on WhatsApp</a>
+</div>
+
     </footer>
     <script>
         // ===== INITIALIZE =====
